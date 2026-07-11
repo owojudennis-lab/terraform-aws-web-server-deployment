@@ -1,0 +1,200 @@
+<mxfile host="app.diagrams.net" modified="2026-07-06T00:00:00.000Z" agent="Claude" version="24.7.17" type="device">
+  <diagram name="Terraform-Web-Server-Deployment" id="terraform-web-arch">
+    <mxGraphModel dx="1500" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1350" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="Terraform Automated Web Server Deployment" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="60" y="14" width="1230" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Infrastructure as Code using Terraform" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=0;fontColor=#545B64;" vertex="1" parent="1">
+          <mxGeometry x="60" y="46" width="1230" height="24" as="geometry" />
+        </mxCell>
+
+        <mxCell id="devLaptop" value="Developer Laptop" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3E;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.user;" vertex="1" parent="1">
+          <mxGeometry x="640" y="100" width="56" height="56" as="geometry" />
+        </mxCell>
+
+        <mxCell id="awsCli" value="AWS CLI" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#FFFFFF;fontSize=12;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="608" y="196" width="120" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="terraformCli" value="Terraform" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=12;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="608" y="266" width="120" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tfApply" value="terraform apply" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=12;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="608" y="336" width="120" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="awsProvider" value="AWS Provider" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#FFFFFF;fontSize=12;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="608" y="406" width="120" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="browser" value="Browser" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#545B64;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_alt1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="490" width="56" height="56" as="geometry" />
+        </mxCell>
+
+        <mxCell id="awsCloud" value="AWS Cloud (us-east-1)" style="sketch=0;points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[0,1],[0.25,1],[0.5,1],[0.75,1],[1,1],[0,0.25],[0,0.5],[0,0.75],[1,0.25],[1,0.5],[1,0.75]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=14;fontStyle=1;container=0;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#8C8C8C;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#545B64;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="580" width="850" height="1080" as="geometry" />
+        </mxCell>
+
+        <mxCell id="vpc" value="VPC: terraform-custom-vpc (10.0.0.0/16)" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#D86613;fillColor=none;dashed=1;dashPattern=8 4;verticalAlign=top;align=left;spacingLeft=16;spacingTop=32;fontSize=13;fontStyle=1;fontColor=#D86613;" vertex="1" parent="1">
+          <mxGeometry x="280" y="630" width="790" height="1000" as="geometry" />
+        </mxCell>
+
+        <mxCell id="provisionedBadge" value="Provisioned by Terraform" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#2E7D32;fillColor=#EAF5EA;fontSize=10;fontStyle=1;fontColor=#1E5B20;align=center;" vertex="1" parent="1">
+          <mxGeometry x="840" y="635" width="200" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="igw" value="Internet Gateway" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9900;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.internet_gateway;" vertex="1" parent="1">
+          <mxGeometry x="920" y="680" width="56" height="56" as="geometry" />
+        </mxCell>
+
+        <mxCell id="routeTable" value="Public Route Table&#10;Destination: 0.0.0.0/0 → Target: Internet Gateway&#10;Associated with: Public Subnet" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#5A9BD5;fillColor=#DCEBF9;fontSize=11;fontStyle=1;fontColor=#232F3E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="750" width="320" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="publicSubnet" value="Public Subnet (10.0.1.0/24)" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#D6B656;fillColor=#FFF9E0;verticalAlign=top;align=center;fontSize=13;fontStyle=1;fontColor=#8A6D3B;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="310" y="850" width="430" height="520" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bastionSG" value="terraform-bastion-sg" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#2E7D32;fillColor=none;dashed=0;verticalAlign=top;align=center;fontSize=11;fontStyle=1;fontColor=#2E7D32;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="910" width="190" height="210" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bastion" value="EC2&#10;terraform-bastion-host" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9900;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+          <mxGeometry x="395" y="970" width="60" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="webSG" value="terraform-web-sg" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#2E7D32;fillColor=none;dashed=0;verticalAlign=top;align=center;fontSize=11;fontStyle=1;fontColor=#2E7D32;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="540" y="910" width="180" height="210" as="geometry" />
+        </mxCell>
+
+        <mxCell id="webServer" value="EC2&#10;terraform-web-server" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9900;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="970" width="60" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="userDataNote" value="Web Server — EC2 User Data&#10;• Installs NGINX&#10;• Creates index.html&#10;• Starts nginx service" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#F7F5FF;fontSize=10;fontStyle=0;fontColor=#232F3E;align=left;spacingLeft=10;spacingTop=6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="330" y="1150" width="390" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="publicSGRulesNote" value="terraform-bastion-sg: SSH (22) from admin IP&#10;terraform-web-sg: HTTP (80) from 0.0.0.0/0" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#2E7D32;fillColor=#EAF5EA;fontSize=10;fontStyle=0;fontColor=#232F3E;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1260" width="390" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="privateSubnet" value="Private Subnet (10.0.2.0/24)" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#8C8C8C;fillColor=#EDEDED;verticalAlign=top;align=center;fontSize=13;fontStyle=1;fontColor=#545B64;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="780" y="850" width="270" height="520" as="geometry" />
+        </mxCell>
+
+        <mxCell id="privateSG" value="terraform-private-sg" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#2E7D32;fillColor=none;dashed=0;verticalAlign=top;align=center;fontSize=11;fontStyle=1;fontColor=#2E7D32;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="810" y="910" width="210" height="210" as="geometry" />
+        </mxCell>
+
+        <mxCell id="privateServer" value="EC2&#10;terraform-private-server" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9900;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ec2;" vertex="1" parent="1">
+          <mxGeometry x="885" y="970" width="60" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="privateSGRulesNote" value="Inbound: SSH — Source: terraform-bastion-sg&#10;Outbound: All Traffic" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;strokeColor=#2E7D32;fillColor=#EAF5EA;fontSize=10;fontStyle=0;fontColor=#232F3E;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="1150" width="210" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Traffic Flow strip (illustrative, below AWS Cloud boundary) -->
+        <mxCell id="trafficFlowLabel" value="Traffic Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1700" width="200" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tfBrowser" value="Browser" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#545B64;fillColor=#FFFFFF;fontSize=11;fontStyle=1;fontColor=#232F3E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1740" width="130" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tfWebServer" value="Web Server" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#D86613;fillColor=#FFF3E0;fontSize=11;fontStyle=1;fontColor=#232F3E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1740" width="130" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tfBastion" value="Bastion Host" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#D86613;fillColor=#FFF3E0;fontSize=11;fontStyle=1;fontColor=#232F3E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1740" width="130" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tfPrivateServer" value="Private Server" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;strokeColor=#D86613;fillColor=#FFF3E0;fontSize=11;fontStyle=1;fontColor=#232F3E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1740" width="140" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edgeTfFlow1" value="HTTP (80)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;fontColor=#232F3E;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfBrowser" target="tfWebServer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeTfFlow2" value="SSH" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;fontColor=#232F3E;strokeColor=#1E8449;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfWebServer" target="tfBastion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeTfFlow3" value="SSH" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;fontColor=#232F3E;strokeColor=#1E8449;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfBastion" target="tfPrivateServer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Terraform Files section -->
+        <mxCell id="filesBox" value="Terraform Files&#10;&#10;versions.tf&#10;provider.tf&#10;variables.tf&#10;terraform.tfvars&#10;networking.tf&#10;security.tf&#10;compute.tf&#10;outputs.tf&#10;userdata.sh" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#F7F5FF;fontSize=11;fontStyle=0;fontColor=#232F3E;align=center;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1830" width="340" height="270" as="geometry" />
+        </mxCell>
+
+        <!-- Terraform Commands section -->
+        <mxCell id="commandsBox" value="Terraform Commands&#10;&#10;terraform init&#10;terraform validate&#10;terraform plan&#10;terraform apply&#10;terraform output&#10;terraform state list" style="rounded=1;arcSize=6;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#F7F5FF;fontSize=11;fontStyle=0;fontColor=#232F3E;align=center;verticalAlign=top;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1830" width="340" height="270" as="geometry" />
+        </mxCell>
+
+        <!-- Callout badges (2 rows of 3) -->
+        <mxCell id="badge1" value="Infrastructure as Code" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=11;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="2130" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="badge2" value="Automated Provisioning" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=11;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="2130" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="badge3" value="EC2 User Data" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=11;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="760" y="2130" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="badge4" value="Repeatable Deployment" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=11;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="2182" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="badge5" value="Terraform State" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=11;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="2182" width="220" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="badge6" value="Secure Networking" style="rounded=1;arcSize=40;whiteSpace=wrap;html=1;strokeColor=#5C4EE5;fillColor=#EFEBFF;fontSize=11;fontStyle=1;fontColor=#4A3AB8;align=center;" vertex="1" parent="1">
+          <mxGeometry x="760" y="2182" width="220" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- ===================== Edges ===================== -->
+
+        <mxCell id="edgeDevCli" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="devLaptop" target="awsCli">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeCliTf" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="awsCli" target="terraformCli">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeTfApply" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="terraformCli" target="tfApply">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeApplyProvider" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tfApply" target="awsProvider">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edgeProviderCloud" value="Provisions" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;fontColor=#232F3E;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="awsProvider" target="awsCloud">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edgeBrowserWeb" value="HTTP (80)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;fontColor=#232F3E;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="browser" target="webServer">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1038" y="700" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="edgeIgwRt" value="0.0.0.0/0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;fontColor=#232F3E;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="igw" target="routeTable">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edgeRtSubnet" value="Associated with" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=10;fontColor=#232F3E;strokeColor=#232F3E;endArrow=block;endFill=1;exitX=0.4;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="routeTable" target="publicSubnet">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edgeBastionPrivate" value="SSH" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;fontStyle=1;fontColor=#232F3E;strokeColor=#1E8449;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bastion" target="privateServer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
